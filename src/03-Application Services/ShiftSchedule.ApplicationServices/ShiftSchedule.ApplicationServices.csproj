@@ -39,11 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Constraint.cs" />
-    <Compile Include="EmployeeConstraint.cs" />
-    <Compile Include="EmployeeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Schedule.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\01-Domain\ShiftSchedule.Domain.Entities\ShiftSchedule.Domain.Entities.csproj">

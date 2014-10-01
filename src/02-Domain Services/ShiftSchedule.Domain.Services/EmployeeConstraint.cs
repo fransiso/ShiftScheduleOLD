@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ShiftSchedule.ApplicationServices
+namespace ShiftSchedule.Domain.Services
 {
     class EmployeeConstraint
     {

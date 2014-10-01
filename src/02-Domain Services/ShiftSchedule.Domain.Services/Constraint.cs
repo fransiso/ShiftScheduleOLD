@@ -1,5 +1,5 @@
 ﻿
-namespace ShiftSchedule.ApplicationServices
+namespace ShiftSchedule.Domain.Services
 {
     public enum DeafultConstraints
     {

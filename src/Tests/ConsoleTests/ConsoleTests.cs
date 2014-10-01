@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using ShiftSchedule.ApplicationServices;
 using ShiftSchedule.Domain.Entities;
+using ShiftSchedule.Domain.Services;
 
 namespace ShiftSchedule.ConsoleTests
 {

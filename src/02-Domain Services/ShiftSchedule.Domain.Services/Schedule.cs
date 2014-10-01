@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using ShiftSchedule.Domain.Entities;
 
-namespace ShiftSchedule.ApplicationServices
+namespace ShiftSchedule.Domain.Services
 {
     public class Schedule
     {

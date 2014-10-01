@@ -39,8 +39,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="ShiftRepository.cs" />
+    <Compile Include="EmployeeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\01-Domain\ShiftSchedule.Domain.Entities\ShiftSchedule.Domain.Entities.csproj">
+      <Project>{7ABC928E-C39A-44F9-A425-575A88A511D9}</Project>
+      <Name>ShiftSchedule.Domain.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\01-Domain\ShiftSchedule.Domain.Interfaces\ShiftSchedule.Domain.Interfaces.csproj">
+      <Project>{7C38B15B-E020-4AC0-880B-B77190B3C997}</Project>
+      <Name>ShiftSchedule.Domain.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

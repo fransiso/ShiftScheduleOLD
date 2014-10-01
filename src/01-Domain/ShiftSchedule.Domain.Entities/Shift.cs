@@ -11,8 +11,11 @@ namespace ShiftSchedule.Domain.Entities
 
     public class Shift
     {
+        public int ShiftId { get; set; }
         private readonly string Name; //Morning,Evening or other (
         private DayOfWeek Day;
+        private TimeSpan Started { get; set; }
+        private TimeSpan Ended { get; set; }
 
         public Shift(string name, DayOfWeek day, TimeSpan started, TimeSpan ended)
         {
@@ -21,9 +24,6 @@ namespace ShiftSchedule.Domain.Entities
             Started = started;
             Ended = ended;
         }
-
-        private TimeSpan Started { get; set; }
-        private TimeSpan Ended { get; set; }
 
         public TimeSpan GetDuration()
         {

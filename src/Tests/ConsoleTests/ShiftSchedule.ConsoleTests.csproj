@@ -54,6 +54,10 @@
       <Project>{7ABC928E-C39A-44F9-A425-575A88A511D9}</Project>
       <Name>ShiftSchedule.Domain.Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\02-Domain Services\ShiftSchedule.Domain.Services\ShiftSchedule.Domain.Services.csproj">
+      <Project>{EF7C8A1A-1EEE-4103-BBDA-1ACE1964ACE6}</Project>
+      <Name>ShiftSchedule.Domain.Services</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\03-Application Services\ShiftSchedule.ApplicationServices\ShiftSchedule.ApplicationServices.csproj">
       <Project>{78248A03-5968-482C-B94E-182FAE04A146}</Project>
       <Name>ShiftSchedule.ApplicationServices</Name>
