@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Domain", "01-Domain", "{5C25127E-FD49-4E5A-B017-1A7D71AADE6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Application Services", "03-Application Services", "{9515652C-A87A-45A5-8ACF-623366302831}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Domain Services", "02-Domain Services", "{66BA8F6B-DB6F-40BE-8EB5-EF22E480E260}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-User Interface", "05-User Interface", "{E66DFE38-2190-410E-B48A-01570FE679FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06-Dependency Resolution", "06-Dependency Resolution", "{AB1B4DCE-62E7-46C7-A0AF-C42D2297CF23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Infrastructure", "04-Infrastructure", "{1958F793-A364-4502-8C36-6B26C1B7D7B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BEF91B0E-A877-4A4E-9EE7-299C501EFD3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftSchedule.Domain.Interfaces", "src\01-Domain\ShiftSchedule.Domain.Interfaces\ShiftSchedule.Domain.Interfaces.csproj", "{7C38B15B-E020-4AC0-880B-B77190B3C997}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftSchedule.Domain.Entities", "src\01-Domain\ShiftSchedule.Domain.Entities\ShiftSchedule.Domain.Entities.csproj", "{7ABC928E-C39A-44F9-A425-575A88A511D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftSchedule.Domain.Services", "src\02-Domain Services\ShiftSchedule.Domain.Services\ShiftSchedule.Domain.Services.csproj", "{EF7C8A1A-1EEE-4103-BBDA-1ACE1964ACE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftSchedule.ApplicationServices", "src\03-Application Services\ShiftSchedule.ApplicationServices\ShiftSchedule.ApplicationServices.csproj", "{78248A03-5968-482C-B94E-182FAE04A146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftSchedule.Infrastructure.Data", "src\04-Infrastructure\ShiftSchedule.Infrastructure.Data\ShiftSchedule.Infrastructure.Data.csproj", "{76E0C704-CD5A-47C7-86CA-9075B680625D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftSchedule.Infrastructure.Logging", "src\04-Infrastructure\ShiftSchedule.Infrastructure.Logging\ShiftSchedule.Infrastructure.Logging.csproj", "{5E772792-C2A5-4548-B219-90D98C8C73E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftSchedule.UI", "src\05-User Interface\ShiftSchedule.UI\ShiftSchedule.UI.csproj", "{6E306D90-6349-447A-8DBD-303F6405F077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftSchedule.UnitTests.Domain.Entities", "src\Tests\Unit Tests\ShiftSchedule.UnitTests.Domain.Entities\ShiftSchedule.UnitTests.Domain.Entities.csproj", "{414470BA-BE6C-4B75-BB63-28F64E80AF42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftSchedule.ConsoleTests", "src\Tests\ConsoleTests\ShiftSchedule.ConsoleTests.csproj", "{1AB16133-EE39-482D-9398-72A306FEE624}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C38B15B-E020-4AC0-880B-B77190B3C997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C38B15B-E020-4AC0-880B-B77190B3C997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C38B15B-E020-4AC0-880B-B77190B3C997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C38B15B-E020-4AC0-880B-B77190B3C997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ABC928E-C39A-44F9-A425-575A88A511D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ABC928E-C39A-44F9-A425-575A88A511D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ABC928E-C39A-44F9-A425-575A88A511D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ABC928E-C39A-44F9-A425-575A88A511D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF7C8A1A-1EEE-4103-BBDA-1ACE1964ACE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF7C8A1A-1EEE-4103-BBDA-1ACE1964ACE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF7C8A1A-1EEE-4103-BBDA-1ACE1964ACE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF7C8A1A-1EEE-4103-BBDA-1ACE1964ACE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78248A03-5968-482C-B94E-182FAE04A146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78248A03-5968-482C-B94E-182FAE04A146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78248A03-5968-482C-B94E-182FAE04A146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78248A03-5968-482C-B94E-182FAE04A146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76E0C704-CD5A-47C7-86CA-9075B680625D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E0C704-CD5A-47C7-86CA-9075B680625D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E0C704-CD5A-47C7-86CA-9075B680625D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E0C704-CD5A-47C7-86CA-9075B680625D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E772792-C2A5-4548-B219-90D98C8C73E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E772792-C2A5-4548-B219-90D98C8C73E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E772792-C2A5-4548-B219-90D98C8C73E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E772792-C2A5-4548-B219-90D98C8C73E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E306D90-6349-447A-8DBD-303F6405F077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E306D90-6349-447A-8DBD-303F6405F077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E306D90-6349-447A-8DBD-303F6405F077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E306D90-6349-447A-8DBD-303F6405F077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{414470BA-BE6C-4B75-BB63-28F64E80AF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414470BA-BE6C-4B75-BB63-28F64E80AF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414470BA-BE6C-4B75-BB63-28F64E80AF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414470BA-BE6C-4B75-BB63-28F64E80AF42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB16133-EE39-482D-9398-72A306FEE624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB16133-EE39-482D-9398-72A306FEE624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB16133-EE39-482D-9398-72A306FEE624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB16133-EE39-482D-9398-72A306FEE624}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C38B15B-E020-4AC0-880B-B77190B3C997} = {5C25127E-FD49-4E5A-B017-1A7D71AADE6C}
+		{7ABC928E-C39A-44F9-A425-575A88A511D9} = {5C25127E-FD49-4E5A-B017-1A7D71AADE6C}
+		{78248A03-5968-482C-B94E-182FAE04A146} = {9515652C-A87A-45A5-8ACF-623366302831}
+		{EF7C8A1A-1EEE-4103-BBDA-1ACE1964ACE6} = {66BA8F6B-DB6F-40BE-8EB5-EF22E480E260}
+		{6E306D90-6349-447A-8DBD-303F6405F077} = {E66DFE38-2190-410E-B48A-01570FE679FF}
+		{76E0C704-CD5A-47C7-86CA-9075B680625D} = {1958F793-A364-4502-8C36-6B26C1B7D7B1}
+		{5E772792-C2A5-4548-B219-90D98C8C73E3} = {1958F793-A364-4502-8C36-6B26C1B7D7B1}
+		{414470BA-BE6C-4B75-BB63-28F64E80AF42} = {BEF91B0E-A877-4A4E-9EE7-299C501EFD3E}
+		{1AB16133-EE39-482D-9398-72A306FEE624} = {BEF91B0E-A877-4A4E-9EE7-299C501EFD3E}
+	EndGlobalSection
+EndGlobal
