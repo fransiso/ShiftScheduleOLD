@@ -12,6 +12,11 @@ namespace ShiftSchedule.UI
     {
         protected void Application_Start()
         {
+     
+            // Register Inversion of Control dependencies
+            IoCConfig.RegisterDependencies();
+
+            // Typical MVC setup
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

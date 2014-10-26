@@ -4,7 +4,7 @@ namespace ShiftSchedule.Domain.Services
     public enum DeafultConstraints
     {
         AvoidDoubleShift = 0,
-        AvoidSandwiche = 1, //more than one free shift between two scheduled shifts
+        AvoidSandwiches = 1, //more than one free shift between two scheduled shifts
         MinShifts = 2,
         MaxShifts = 3
     }
