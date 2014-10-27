@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using ShiftSchedule.Domain.Entities;
 using ShiftSchedule.Domain.Interfaces;
+using ShiftSchedule.Infrastructure.Data.NHibernate.Repositories.Base;
 
-namespace ShiftSchedule.Infrastructure.Data
+namespace ShiftSchedule.Infrastructure.Data.NHibernate.Repositories
 {
-    public class ShiftRepository : IShiftRepository
+    public class ShiftRepository : NhRepositoryBase<Shift,int>,IShiftRepository
     {
         public IEnumerable<Employee> GetEmployeesByShiftId(int shiftId)
         {

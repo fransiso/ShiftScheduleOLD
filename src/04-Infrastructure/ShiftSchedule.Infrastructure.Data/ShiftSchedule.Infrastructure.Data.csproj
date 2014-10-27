@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\..\lib\FluentNHibernate.1.4.0.0\lib\net35\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\lib\NHibernate.3.3.1.4000\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,8 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ShiftRepository.cs" />
-    <Compile Include="EmployeeRepository.cs" />
+    <Compile Include="NHibernate\EntityMapping\Base\CoreModuleMapExtensions.cs" />
+    <Compile Include="NHibernate\EntityMapping\Base\EntityMapOfTEntity.cs" />
+    <Compile Include="NHibernate\EntityMapping\Base\EntityMapOfTEntityAndTPrimaryKey.cs" />
+    <Compile Include="NHibernate\Repositories\Base\NhRepositoryBase.cs" />
+    <Compile Include="NHibernate\UoW\NhUnitOfWork.cs" />
+    <Compile Include="NHibernate\Repositories\ShiftRepository.cs" />
+    <Compile Include="NHibernate\Repositories\EmployeeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +63,14 @@
       <Project>{7C38B15B-E020-4AC0-880B-B77190B3C997}</Project>
       <Name>ShiftSchedule.Domain.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\02-Domain Services\ShiftSchedule.Domain.Services\ShiftSchedule.Domain.Services.csproj">
+      <Project>{EF7C8A1A-1EEE-4103-BBDA-1ACE1964ACE6}</Project>
+      <Name>ShiftSchedule.Domain.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NHibernate\Config\" />
+    <Folder Include="NHibernate\Interceptors\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

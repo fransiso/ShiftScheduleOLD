@@ -1,4 +1,5 @@
 ﻿using System;
+using ShiftSchedule.Domain.Entities.Base;
 
 namespace ShiftSchedule.Domain.Entities
 {
@@ -9,7 +10,7 @@ namespace ShiftSchedule.Domain.Entities
         Night = 2
     }
 
-    public class Shift
+    public class Shift : Entity<int>
     {
         public int ShiftId { get; set; }
         private readonly string Name; //Morning,Evening or other (
