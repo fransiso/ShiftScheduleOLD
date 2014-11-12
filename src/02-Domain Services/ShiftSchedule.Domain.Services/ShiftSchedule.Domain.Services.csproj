@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ShiftSchedule.Domain.Services</RootNamespace>
     <AssemblyName>ShiftSchedule.Domain.Services</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,26 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Auditing\AuditedEntity.cs" />
-    <Compile Include="Auditing\AuditedEntityOfTPrimaryKey.cs" />
-    <Compile Include="Auditing\AuditedEntityOfTPrimaryKeyAndTUser.cs" />
-    <Compile Include="Auditing\CreationAuditedEntity.cs" />
-    <Compile Include="Auditing\CreationAuditedEntityOfTPrimaryKey.cs" />
-    <Compile Include="Auditing\CreationAuditedEntityOfTPrimaryKeyAndTUser.cs" />
-    <Compile Include="Auditing\FullAuditedEntity.cs" />
-    <Compile Include="Auditing\FullAuditedEntityOfTPrimaryKey.cs" />
-    <Compile Include="Auditing\FullAuditedEntityOfTPrimaryKeyAndTUser.cs" />
-    <Compile Include="Auditing\IAudited.cs" />
-    <Compile Include="Auditing\IAuditedOfTUser.cs" />
-    <Compile Include="Auditing\ICreationAudited.cs" />
-    <Compile Include="Auditing\ICreationAuditedOfTUser.cs" />
-    <Compile Include="Auditing\IDeletionAudited.cs" />
-    <Compile Include="Auditing\IDeletionAuditedOfTUser.cs" />
-    <Compile Include="Auditing\IFullAudited.cs" />
-    <Compile Include="Auditing\IFullAuditedOfTUser.cs" />
-    <Compile Include="Auditing\IHasCreationTime.cs" />
-    <Compile Include="Auditing\IModificationAudited.cs" />
-    <Compile Include="Auditing\IModificationAuditedOfTUser.cs" />
     <Compile Include="Constraint.cs" />
     <Compile Include="EmployeeConstraint.cs" />
     <Compile Include="EmployeeService.cs" />

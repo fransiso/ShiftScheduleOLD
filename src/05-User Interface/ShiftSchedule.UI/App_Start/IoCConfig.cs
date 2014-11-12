@@ -1,6 +1,9 @@
 ﻿using System.Web.Mvc;
 using Autofac;
 using Autofac.Integration.Mvc;
+using NHibernate;
+using ShiftSchedule.Infrastructure.Data;
+using ShiftSchedule.Infrastructure.Data.NHibernate.UoW;
 
 namespace ShiftSchedule.UI
 {
@@ -27,6 +30,19 @@ namespace ShiftSchedule.UI
                    .Where(t => t.Name.EndsWith("Service"))
                    .AsImplementedInterfaces()
                    .InstancePerRequest();
+            //register per assmbly//
+            //builder.RegisterAssemblyTypes(typeof(IRepository<Employee>).Assembly).Where(t => t.Name.EndsWith("Repository")).AsImplementedInterfaces().InstancePerRequest();
+            //register per class// 
+            //builder.RegisterType<EmployeeRepository>().As<IEmployeeRepository>().InstancePerRequest();
+            #endregion
+
+            #region Unit of work
+            builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerRequest();
+            #endregion
+
+            #region NHibernate
+            builder.Register(c => ShiftSchedule.Infrastructure.Data.ConnectionHelper.BuildSessionFactory("Example")).As<ISessionFactory>().SingleInstance();
+            builder.Register(c => c.Resolve<ISessionFactory>().OpenSession()).InstancePerRequest();
             #endregion
 
             #region Register all controllers for the assembly

@@ -4,7 +4,7 @@ using ShiftSchedule.Domain.Interfaces.Base;
 
 namespace ShiftSchedule.Domain.Interfaces
 {
-    public interface IEmployeeRepository : IRepository<Employee,int>
+    public interface IEmployeeRepository : IRepository<Employee>
     {
         List<Employee> GetEmployees();
         void AddEmployee(Employee employee);

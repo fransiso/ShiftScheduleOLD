@@ -1,20 +1,21 @@
 ﻿using System;
 //NTD change the name of the class to general name like 'User' (this app can be manage also by students and some other types of users)
-using ShiftSchedule.Domain.Entities.Base;
+
 
 namespace ShiftSchedule.Domain.Entities
 {
-    public class Employee : Entity<int>
+    public class Employee 
     {
-        public int EmployeeId { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
-        public DateTime DateCreated { get; set; }
-        public bool AdminRights { get; set; }
+        public virtual int Id { get; set; }
+        public virtual string FirstName { get; set; }
+        public virtual string LastName { get; set; }
+        public virtual string Email { get; set; }
+        public virtual DateTime DateCreated { get; set; }
+        public virtual bool AdminRights { get; set; }
 
        public Employee()
         {
+            DateCreated = DateTime.Now;
         }
 
         public Employee(string firstName, string lastName, string email, DateTime dateCreated)
@@ -39,6 +40,7 @@ namespace ShiftSchedule.Domain.Entities
             if (string.IsNullOrEmpty(FirstName))
                 return false;
             return true;
-        }
+        } 
+         
     }
 }
