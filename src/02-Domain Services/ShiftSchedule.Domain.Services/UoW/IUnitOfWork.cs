@@ -1,15 +1,9 @@
 using System;
-using ShiftSchedule.Domain.Interfaces.Base;
+
 
 namespace ShiftSchedule.Domain.Services.UoW
 {
-    /// <summary>
-    /// Defines a unit of work.
-    /// </summary>
-     /// <summary>
-    /// Represents a transactional job.
-    /// </summary>
-    public interface IUnitOfWork
+    public interface IUnitOfWork //: IDisposable
     {
         /// <summary>
         /// Opens database connection and begins transaction.
@@ -26,5 +20,4 @@ namespace ShiftSchedule.Domain.Services.UoW
         /// </summary>
         void Rollback();
     }
-    
 }

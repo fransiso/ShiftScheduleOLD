@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Domain", "01-Domain", "{5C25127E-FD49-4E5A-B017-1A7D71AADE6C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Application Services", "03-Application Services", "{9515652C-A87A-45A5-8ACF-623366302831}"
@@ -36,6 +34,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftSchedule.UI.Tests", "src\Tests\Unit Tests\ShiftSchedule.UI.Tests\ShiftSchedule.UI.Tests.csproj", "{D4C9F322-534D-4483-A25E-70F3FB3D08E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftSchedule.UI", "src\05-User Interface\ShiftSchedule.UI\ShiftSchedule.UI.csproj", "{11947CB7-1DDB-4035-A12F-BF5934EF0B36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyResolution", "src\06-Dependency Resolution\DependencyResolution\DependencyResolution.csproj", "{7037CE23-BBE7-4C4C-8C75-2F002AB5C2BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +83,10 @@ Global
 		{11947CB7-1DDB-4035-A12F-BF5934EF0B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11947CB7-1DDB-4035-A12F-BF5934EF0B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11947CB7-1DDB-4035-A12F-BF5934EF0B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7037CE23-BBE7-4C4C-8C75-2F002AB5C2BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7037CE23-BBE7-4C4C-8C75-2F002AB5C2BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7037CE23-BBE7-4C4C-8C75-2F002AB5C2BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7037CE23-BBE7-4C4C-8C75-2F002AB5C2BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +97,7 @@ Global
 		{78248A03-5968-482C-B94E-182FAE04A146} = {9515652C-A87A-45A5-8ACF-623366302831}
 		{EF7C8A1A-1EEE-4103-BBDA-1ACE1964ACE6} = {66BA8F6B-DB6F-40BE-8EB5-EF22E480E260}
 		{11947CB7-1DDB-4035-A12F-BF5934EF0B36} = {E66DFE38-2190-410E-B48A-01570FE679FF}
+		{7037CE23-BBE7-4C4C-8C75-2F002AB5C2BE} = {AB1B4DCE-62E7-46C7-A0AF-C42D2297CF23}
 		{76E0C704-CD5A-47C7-86CA-9075B680625D} = {1958F793-A364-4502-8C36-6B26C1B7D7B1}
 		{5E772792-C2A5-4548-B219-90D98C8C73E3} = {1958F793-A364-4502-8C36-6B26C1B7D7B1}
 		{414470BA-BE6C-4B75-BB63-28F64E80AF42} = {BEF91B0E-A877-4A4E-9EE7-299C501EFD3E}

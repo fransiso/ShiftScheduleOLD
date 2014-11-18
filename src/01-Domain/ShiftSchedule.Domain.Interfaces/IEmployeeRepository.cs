@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using ShiftSchedule.Domain.Entities;
-using ShiftSchedule.Domain.Interfaces.Base;
 
 namespace ShiftSchedule.Domain.Interfaces
 {
-    public interface IEmployeeRepository : IRepository<Employee,int>
+    public interface IEmployeeRepository : IRepositoryBase<Employee>
     {
         List<Employee> GetEmployees();
         void AddEmployee(Employee employee);

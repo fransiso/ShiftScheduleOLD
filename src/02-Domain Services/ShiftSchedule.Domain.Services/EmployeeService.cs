@@ -1,20 +1,19 @@
 ﻿using System.Collections.Generic;
 using ShiftSchedule.Domain.Entities;
+using ShiftSchedule.Domain.Interfaces;
+using System.Linq;
 
 namespace ShiftSchedule.Domain.Services
 {
-    public class EmployeeService : IEmployeeService
+    public class EmployeeService : ServiceBase<Employee>, IEmployeeService
     {
-        private readonly IEmployeeService _repository;
+        private readonly IEmployeeRepository _repository;
 
-        public EmployeeService(IEmployeeService repository)
+        public EmployeeService(IEmployeeRepository repository)
+            : base(repository)
         {
             _repository = repository;
         }
 
-        public List<Employee> GetEmployees()
-        {
-			return _repository.GetEmployees();
-        }
     }
 }

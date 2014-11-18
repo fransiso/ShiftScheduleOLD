@@ -3,8 +3,8 @@ using ShiftSchedule.Domain.Entities;
 
 namespace ShiftSchedule.Domain.Services
 {
-    public interface IEmployeeService
+    public interface IEmployeeService : IServiceBase<Employee>
     {
-        List<Employee> GetEmployees();
+       
     }
 }
