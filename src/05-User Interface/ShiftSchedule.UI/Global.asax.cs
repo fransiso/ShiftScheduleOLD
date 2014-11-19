@@ -7,7 +7,6 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using ShiftSchedule.UI.AutoMapper;
 
-
 namespace ShiftSchedule.UI
 {
     public class MvcApplication : System.Web.HttpApplication

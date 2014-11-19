@@ -12,11 +12,8 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
-<<<<<<< HEAD
-=======
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
->>>>>>> e74678f3677175d777670a257aec6604ee2b6904
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,13 +55,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="ConnectionHelper.cs" />
-    <Compile Include="NHibernate\Mapping\EmployeeMap.cs" />
-    <Compile Include="NHibernate\NHRepositories\Base\RepositoryBase.cs" />
-    <Compile Include="NHibernate\UoW\IUnitOfWork.cs" />
-    <Compile Include="NHibernate\UoW\UnitOfWork.cs" />
-=======
     <Compile Include="ORM\EF\Entityconfg\EmployeeConfiguration.cs" />
     <Compile Include="ORM\EF\Migrations\Configuration.cs" />
     <Compile Include="ORM\EF\Context\ShiftScheduleContext.cs" />
@@ -74,14 +64,7 @@
     <Compile Include="ORM\NHibernate\UoW\NhUnitOfWork.cs" />
     <Compile Include="Repositories\ShiftRepository.cs" />
     <Compile Include="Repositories\EmployeeRepository.cs" />
->>>>>>> e74678f3677175d777670a257aec6604ee2b6904
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\EmployeeRepository.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Repositories\ShiftRepository.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\01-Domain\ShiftSchedule.Domain.Entities\ShiftSchedule.Domain.Entities.csproj">
@@ -98,13 +81,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
-<<<<<<< HEAD
-=======
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
->>>>>>> e74678f3677175d777670a257aec6604ee2b6904
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

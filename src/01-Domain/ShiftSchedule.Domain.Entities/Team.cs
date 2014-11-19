@@ -4,7 +4,6 @@
     {
         //NOC,Support,...
         public int TeamId { get; set; } //NOTE maybe its value object so we dont need identity (and will be moved to Domain Services scope)
-
         public Team(string name)
         {
             Name = name;

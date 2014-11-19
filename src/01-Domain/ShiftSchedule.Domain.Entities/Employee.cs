@@ -6,23 +6,17 @@ namespace ShiftSchedule.Domain.Entities
 {
     public class Employee 
     {
-        public virtual int Id { get; set; }
-        public virtual string FirstName { get; set; }
-        public virtual string LastName { get; set; }
-        public virtual string Email { get; set; }
-        public virtual DateTime DateCreated { get; set; }
-        public virtual bool AdminRights { get; set; }
+        public int EmployeeId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public DateTime DateCreated { get; set; }
+        public bool AdminRights { get; set; }
 
        public Employee()
-<<<<<<< HEAD
-        {
-            DateCreated = DateTime.Now;
-        }
-=======
        {
            
        }
->>>>>>> e74678f3677175d777670a257aec6604ee2b6904
 
         public Employee(string firstName, string lastName, string email, DateTime dateCreated)
         {
