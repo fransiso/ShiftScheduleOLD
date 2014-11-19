@@ -52,6 +52,12 @@
     <Reference Include="Autofac.Integration.Mvc">
       <HintPath>..\..\..\lib\Autofac.Mvc5.3.3.3\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\lib\AutoMapper.3.2.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\..\..\lib\AutoMapper.3.2.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\..\..\lib\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -175,7 +181,11 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="AutoMapper\AutoMapperConfig.cs" />
+    <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
+    <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -184,6 +194,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\EmployeeViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -241,6 +252,8 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\Employees\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -253,6 +266,17 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <ProjectReference Include="..\..\01-Domain\ShiftSchedule.Domain.Entities\ShiftSchedule.Domain.Entities.csproj">
+      <Project>{7ABC928E-C39A-44F9-A425-575A88A511D9}</Project>
+      <Name>ShiftSchedule.Domain.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\01-Domain\ShiftSchedule.Domain.Interfaces\ShiftSchedule.Domain.Interfaces.csproj">
+      <Project>{7C38B15B-E020-4AC0-880B-B77190B3C997}</Project>
+      <Name>ShiftSchedule.Domain.Interfaces</Name>
+    </ProjectReference>
+>>>>>>> e74678f3677175d777670a257aec6604ee2b6904
     <ProjectReference Include="..\..\04-Infrastructure\ShiftSchedule.Infrastructure.Data\ShiftSchedule.Infrastructure.Data.csproj">
       <Project>{76e0c704-cd5a-47c7-86ca-9075b680625d}</Project>
       <Name>ShiftSchedule.Infrastructure.Data</Name>
@@ -293,6 +317,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
+  <Import Project="..\..\..\lib\AutoMapper.3.2.1\tools\AutoMapper.targets" Condition="Exists('..\..\..\lib\AutoMapper.3.2.1\tools\AutoMapper.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

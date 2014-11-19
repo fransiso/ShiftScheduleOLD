@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+<<<<<<< HEAD
 using NHibernate;
 using ShiftSchedule.Domain.Entities;
 using ShiftSchedule.Domain.Interfaces;
@@ -18,5 +19,16 @@ namespace ShiftSchedule.Infrastructure.Data.Repositories
     }
     public interface IShiftRepository : IRepository<Shift>
     {
+=======
+using ShiftSchedule.Domain.Entities;
+using ShiftSchedule.Domain.Interfaces;
+using ShiftSchedule.Infrastructure.Data.ORM.EF.Repositories;
+
+namespace ShiftSchedule.Infrastructure.Data.Repositories
+{
+    public class ShiftRepository : EfRepositoryBase<Shift>,IShiftRepository
+    {
+      
+>>>>>>> e74678f3677175d777670a257aec6604ee2b6904
     }
 }

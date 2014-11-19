@@ -1,22 +1,27 @@
 ﻿using System.Collections.Generic;
-using NHibernate;
 using ShiftSchedule.Domain.Entities;
 using ShiftSchedule.Domain.Interfaces;
-using ShiftSchedule.Domain.Interfaces.Base;
-using ShiftSchedule.Infrastructure.Data.NHibernate.NHRepositories.Base;
+using ShiftSchedule.Infrastructure.Data.ORM.EF.Repositories;
+
 
 
 namespace ShiftSchedule.Infrastructure.Data.Repositories
 {
-    public class EmployeeRepository : RepositoryBase<Employee>, IEmployeeRepository
+    public class EmployeeRepository : EfRepositoryBase<Employee>, IEmployeeRepository
     {
-        public EmployeeRepository(ISession session) : base(session)
+        public List<Employee> GetEmployees()
         {
+            throw new System.NotImplementedException();
         }
 
-    }
+        public void AddEmployee(Employee employee)
+        {
+            throw new System.NotImplementedException();
+        }
 
-    public interface IEmployeeRepository : IRepository<Employee>
-    {
+        public Employee GetEmployeeById(int employeeId)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

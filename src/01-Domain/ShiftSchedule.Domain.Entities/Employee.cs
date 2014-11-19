@@ -14,9 +14,15 @@ namespace ShiftSchedule.Domain.Entities
         public virtual bool AdminRights { get; set; }
 
        public Employee()
+<<<<<<< HEAD
         {
             DateCreated = DateTime.Now;
         }
+=======
+       {
+           
+       }
+>>>>>>> e74678f3677175d777670a257aec6604ee2b6904
 
         public Employee(string firstName, string lastName, string email, DateTime dateCreated)
         {
@@ -26,6 +32,7 @@ namespace ShiftSchedule.Domain.Entities
             DateCreated = dateCreated;
         }
 
+        
         public Boolean IsAdmin()
         {
             return AdminRights;
